@@ -62,10 +62,9 @@ func (s Level) effectiveLevelMap() LevelMap {
 	return levelMap
 }
 
-// SetWithVal (called with the value following the parameter) either parses the
-// RGB value or else looks up the supplied colour name. The search is
-// performed "case-blind" - all names are mapped to their lower-case
-// equivalents.
+// SetWithVal (called with the value following the parameter) makes sure that
+// the supplied paramVal is a valid entry in the LevelMap and if so it sets
+// the Value. Otherwise it returns an error.
 func (s Level) SetWithVal(_ string, paramVal string) error {
 	levelMap := s.effectiveLevelMap()
 
@@ -193,7 +192,8 @@ func (s Level) CurrentValue() string {
 }
 
 // CheckSetter panics if the setter has not been properly created - if the
-// Value is nil.
+// Value is nil or if the level map has been set and is empty or has only a
+// single entry.
 func (s Level) CheckSetter(name string) {
 	intro := name + ": slogsetter.Level Check failed:"
 
