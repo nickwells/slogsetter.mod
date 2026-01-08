@@ -3,7 +3,7 @@ module github.com/nickwells/slogsetter.mod
 go 1.24.1
 
 require (
-	github.com/nickwells/param.mod/v6 v6.5.2
+	github.com/nickwells/param.mod/v6 v6.5.3
 	github.com/nickwells/testhelper.mod/v2 v2.4.3
 )
 
@@ -20,6 +20,6 @@ require (
 	github.com/nickwells/tempus.mod v1.2.9 // indirect
 	github.com/nickwells/twrap.mod v1.5.12 // indirect
 	golang.org/x/exp v0.0.0-20251219203646-944ab1f22d93 // indirect
-	golang.org/x/sys v0.39.0 // indirect
+	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/term v0.38.0 // indirect
 )
