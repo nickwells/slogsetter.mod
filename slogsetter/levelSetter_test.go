@@ -6,7 +6,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/nickwells/param.mod/v6/psetter"
+	"github.com/nickwells/param.mod/v7/psetter"
 	"github.com/nickwells/slogsetter.mod/slogsetter"
 	"github.com/nickwells/testhelper.mod/v2/testhelper"
 )

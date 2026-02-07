@@ -7,7 +7,8 @@ import (
 	"slices"
 	"sort"
 
-	"github.com/nickwells/param.mod/v6/psetter"
+	"github.com/nickwells/param.mod/v7/psetter"
+	"github.com/nickwells/strdist.mod/v2/strdist"
 )
 
 // LevelMap is the type of a map between names and slog.Level
@@ -72,8 +73,8 @@ func (s Level) SetWithVal(_ string, paramVal string) error {
 	if !ok {
 		return fmt.Errorf("bad logging level name (%q)%s",
 			paramVal,
-			psetter.SuggestionString(
-				psetter.SuggestedVals(
+			strdist.SuggestionString(
+				strdist.SuggestedVals(
 					paramVal,
 					slices.Collect(maps.Keys(levelMap)),
 				),
