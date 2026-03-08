@@ -3,7 +3,7 @@ module github.com/nickwells/slogsetter.mod
 go 1.25.0
 
 require (
-	github.com/nickwells/param.mod/v7 v7.0.0
+	github.com/nickwells/param.mod/v7 v7.0.1
 	github.com/nickwells/strdist.mod/v2 v2.1.0
 	github.com/nickwells/testhelper.mod/v2 v2.4.3
 )
