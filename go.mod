@@ -1,6 +1,6 @@
 module github.com/nickwells/slogsetter.mod
 
-go 1.26.0
+go 1.27.0
 
 require (
 	github.com/nickwells/param.mod/v7 v7.2.5
